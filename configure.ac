@@ -5,12 +5,11 @@ dnl See LICENSE for copying information.
 dnl
 dnl Original version Dug Song <dugsong@monkey.org>
 
-AC_INIT(libevent,2.1.12-stable)
-AC_PREREQ(2.67)
+AC_INIT([libevent],[2.1.12-stable])
+AC_PREREQ([2.71])
 AC_CONFIG_SRCDIR(event.c)
 
 AC_CONFIG_MACRO_DIR([m4])
-AC_CONFIG_AUX_DIR([build-aux])
 AM_INIT_AUTOMAKE
 dnl AM_SILENT_RULES req. automake 1.11.  [no] defaults V=1
 AM_SILENT_RULES([yes])
@@ -348,13 +347,15 @@ AM_CONDITIONAL(BUILD_MIDIPIX, test x$midipix = xtrue)
 AM_CONDITIONAL(BUILD_WITH_NO_UNDEFINED, test x$bwin32 = xtrue || test x$cygwin = xtrue || test x$midipix = xtrue)
 
 if test x$bwin32 = xtrue; then
-  AC_HAVE_LIBRARY([ws2_32])
+  AC_CHECK_LIB([ws2_32],[main],[],[],[])ac_cv_lib_ws2_32=ac_cv_lib_ws2_32_main
+
 fi
 
 dnl Checks for typedefs, structures, and compiler characteristics.
 AC_C_CONST
 AC_C_INLINE
-AC_HEADER_TIME
+AC_CHECK_HEADERS_ONCE([sys/time.h])
+
 
 dnl Checks for library functions.
 AC_CHECK_FUNCS([ \
@@ -1004,4 +1005,5 @@ AM_CONDITIONAL([ENABLE_DOXYGEN], [test "$DX_FLAG_doc" = "1"])
 AM_CONDITIONAL([ENABLE_DOXYGEN_MAN], [test "$DX_FLAG_man" = "1"])
 
 AC_CONFIG_FILES( [libevent.pc libevent_openssl.pc libevent_pthreads.pc libevent_core.pc libevent_extra.pc] )
-AC_OUTPUT(Makefile)
+AC_CONFIG_FILES([Makefile])
+AC_OUTPUT
