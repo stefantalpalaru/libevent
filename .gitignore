@@ -57,7 +57,7 @@ cscope*
 /conftest.*
 
 /config.status
-/config.h*
+/config.h
 /configure.lineno
 /depcomp
 /libtool
@@ -82,7 +82,6 @@ Doxyfile.doxygen
 /sample/time-test
 /sample/event-test
 
-/test-driver
 /test/bench
 /test/bench_cascade
 /test/bench_http
