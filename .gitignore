@@ -59,8 +59,6 @@ cscope*
 /config.status
 /config.h
 /configure.lineno
-/depcomp
-/libtool
 /stamp-h1
 /stamp-h2
 /build-aux
