@@ -57,11 +57,11 @@ cscope*
 /confdefs.*
 /conftest.*
 
-/config.*
+/config.status
+/config.h*
 /configure.lineno
 /depcomp
 /libtool
-/ltmain.sh
 /stamp-h1
 /stamp-h2
 /build-aux
