@@ -30,7 +30,6 @@
 .deps
 .dirstamp
 Makefile
-Makefile.in
 
 # Libtool stuff
 .libs
