@@ -288,10 +288,10 @@ finish_eval=""
 hardcode_into_libs=yes
 
 # Compile-time system search path for libraries.
-sys_lib_search_path_spec="/usr/lib/gcc/x86_64-pc-linux-gnu/12 /usr/lib64 /lib64 /usr/x86_64-pc-linux-gnu/lib /usr/lib /lib "
+sys_lib_search_path_spec="/usr/lib/gcc/x86_64-pc-linux-gnu/13 /usr/lib64 /lib64 /usr/x86_64-pc-linux-gnu/lib /usr/lib /lib "
 
 # Detected run-time system search path for libraries.
-sys_lib_dlsearch_path_spec="/lib /usr/lib /usr/lib/gcc/x86_64-pc-linux-gnu/12 /usr/lib/gcc/x86_64-pc-linux-gnu/12/32 /usr/lib/gcc/x86_64-pc-linux-gnu/11 /usr/lib/gcc/x86_64-pc-linux-gnu/11/32 /usr/lib64/blas/openblas /usr/lib64/lapack/openblas /usr/lib/OpenCL/vendors/nvidia /usr/lib64/OpenCL/vendors/nvidia /lib64 /usr/lib64 /usr/local/lib64 /lib /usr/lib /usr/local/lib /usr/lib/mysql /usr/lib/rust/lib /usr/lib/llvm/16/lib /usr/lib/llvm/16/lib64 /usr/lib/llvm/15/lib /usr/lib/llvm/15/lib64 /usr/lib64/hamlib /usr/lib64/R/lib /opt/cuda/lib64 /opt/cuda/nvvm/lib64 /opt/cuda/extras/CUPTI/lib64 /usr/lib64/fltk /usr/lib64/libgig/ "
+sys_lib_dlsearch_path_spec="/lib /usr/lib /usr/lib/gcc/x86_64-pc-linux-gnu/13 /usr/lib/gcc/x86_64-pc-linux-gnu/13/32 /usr/lib/gcc/x86_64-pc-linux-gnu/11 /usr/lib/gcc/x86_64-pc-linux-gnu/11/32 /usr/lib64/blas/openblas /usr/lib64/lapack/openblas /usr/lib/OpenCL/vendors/nvidia /usr/lib64/OpenCL/vendors/nvidia /lib64 /usr/lib64 /usr/local/lib64 /lib /usr/lib /usr/local/lib /usr/lib/mysql /usr/lib/rust/lib /usr/lib/llvm/16/lib /usr/lib/llvm/16/lib64 /usr/lib/llvm/15/lib /usr/lib/llvm/15/lib64 /usr/lib64/hamlib /usr/lib64/R/lib /opt/cuda/lib64 /opt/cuda/nvvm/lib64 /opt/cuda/extras/CUPTI/lib64 /usr/lib64/fltk /usr/lib64/libgig/ "
 
 # Explicit LT_SYS_LIBRARY_PATH set during ./configure time.
 configure_time_lt_sys_library_path=""
