@@ -22,6 +22,9 @@ AC_PREFIX_DEFAULT([/usr/local])
 dnl Try and get a full POSIX environment on obscure systems
 AC_USE_SYSTEM_EXTENSIONS
 
+dnl Prevent reconfiguring by default, due to Git not preserving timestamps.
+AM_MAINTAINER_MODE
+
 AC_CANONICAL_BUILD
 AC_CANONICAL_HOST
 dnl the 'build' machine is where we run configure and compile
