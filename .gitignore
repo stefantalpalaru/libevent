@@ -32,6 +32,7 @@
 Makefile
 
 # Libtool stuff
+/libtool
 .libs
 *.lo
 *.la

@@ -19,7 +19,9 @@
 #       start libevent.sln
 #
 
-cmake_minimum_required(VERSION 3.1 FATAL_ERROR)
+# CMake-4 got even crazier and errors out if the minimum required version is
+# lower than 3.5. Yes, you read that right - they redefined boolean logic :-)
+cmake_minimum_required(VERSION 3.5)
 
 if (POLICY CMP0054)
     cmake_policy(SET CMP0054 NEW)
